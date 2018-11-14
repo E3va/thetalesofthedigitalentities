@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:"VT323";
+    src: url(https://fonts.googleapis.com/css?family=VT323) format("truetype");
+    
+}
+
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.button1{
+    
+    border: none;
+    display: block;
+    background-color:cornflowerblue;
+    color: blue;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    height:30px;
+    width: 30px;
+    z-index: 6;
+}
+
+#instructions-window {
+    background-image: url(instructionsscenario2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height:600px;
+    display:block;
+    position:relative;
+    background-color:white;
+    opacity:0.96;
+    z-index:5;
+}
+
+.instructions-button{
+    display:block;
+    border: none;
+    float:right;
+    background: transparent;
+    border: none !important;
+    color: white;
+    /*not picking up on font?*/
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    height:60px;
+    width: 60px;
+    z-index: 1;
+    /*    close button for instructions window   */
+    
+
+}
+
+/*   SIDE BAR  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: aqua;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*   SIDE BAR  */
+
+p {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 27px;
+    color: aqua;
+    font-family: "VT323"; 'VT323', monospace;
+    display: block;
+    transition: 0.3s;
+}
+
+
+
