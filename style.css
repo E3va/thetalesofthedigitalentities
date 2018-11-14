@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: url("background.png");
+    background-size: cover;
+    
+    
+}
+
+
+.Title{
+padding:300px 0px 0px 0px;
+width:50%;
+margin-left:150px;
+background-color: aqua;
+opacity:0.5;
+float:left;
+min-width: 900px;
+
+}
+
+.buttons{
+padding:0px 0px 0px 0px;
+width:40%;
+text-align: left;
+background-color: blue;
+opacity:0.5;
+float:right;
+min-height: 100%;
+
+}
+
+
+#title1{
+    color:white;
+    font-size:5.5vw;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-family: 'VT323', sans-serif;
+    float:left;
+    opacity: 1;
+    line-height: 120%;
+    min-width: 800px;
+    padding:15% 0px 0px 3%;
+    
+    
+}
+
+p {
+    font-size: 1.7vw;
+    color:white;
+    line-height: 180%; 
+    font-family: "VT323"; 'VT323', monospace;
+    padding:0% 0px 0px 3%;
+    opacity:1;
+    
+}
+
+
+
+.button1 {
+   
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 80px;
+    border-radius: 50%;
+    height:150px;
+    width: 150px;
+    opacity:0.6;
+    float:left;
+    margin: 25% 0px 0px 2%;
+    
+    
+}
+
+
+
+.hoverbutton1:hover .overlay1 {
+  opacity: 0.7;
+}
+
+.overlay1 {
+    transition: .5s ease;
+    opacity: 0;
+    font-family: "VT323"; 'VT323', monospace;
+    margin:11.5% 0px 0px 2%;
+    float:left;
+    display:inline-block;
+    line-height: 40px;
+    position:fixed;
+    text-align: left;
+    min-width: 100px;
+   
+}
+
+
+
+.button2{
+   
+   border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 80px;
+    border-radius: 50%;
+    height:150px;
+    width: 150px;
+    opacity:0.6;
+    float:left;
+    margin: 10% 0px 0px 2%;
+
+    
+}
+
+.hoverbutton2:hover .overlay2 {
+  opacity: 0.7;
+
+}
+
+.overlay2 {
+   transition: .5s ease;
+    opacity: 0;
+    font-family: "VT323"; 'VT323', monospace;
+    color:white;
+    margin: 4% 0px 0px 2%;
+    line-height: 40px;
+    font:20px;
+    text-align: left;
+    float:left;
+      display:inline-block;
+    position:fixed;
+}
+
+
+
+.button3{
+  
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 80px;
+    border-radius: 50%;
+    height:150px;
+    width: 150px;
+    opacity:0.6;
+    float:left;
+    margin: 10% 0px 0px 2%;
+   
+
+}
+
+.hoverbutton3:hover .overlay3 {
+  opacity: 0.7;
+
+}
+
+.overlay3 {
+    transition: .5s ease;
+    opacity: 0;
+    font-family: "VT323"; 'VT323', monospace;
+    color:white;
+    margin: 4% 0px 0px 2%;
+    line-height: 40px;
+    font:20px;
+    text-align: left;
+    float:left;
+       display:inline-block;
+    position:fixed;
+}
+
+
+.clear {
+    clear:both;
+    margin-bottom: 20px;
+}
+

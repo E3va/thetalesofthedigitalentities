@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}      
+
+
+@font-face{
+    font-family:"VT323";
+    src: url(https://fonts.googleapis.com/css?family=VT323) format("truetype");
+    
+}
+
+body {
+    background: url('Backgroundscenario1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*    gradient background */
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+    /*    gradient background */
+}
+
+
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    /*    gradient background */
+}
+
+
+#p5-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /*    container for background  */
+}
+
+/*instructionsWindow*/
+#instructions-window {
+    background-image: url(images/instructions_instructions.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height:600px;
+    display:block;
+    background-color: clear;
+}
+
+/*set animation windows style here*/
+#animation-window {
+    /*background-color: red;*/
+    /*position it*/
+    
+    /*make it smaller you could also make the size of it just the size of the animation
+    i.e. don't need white space to position it anymore*/
+    width: 600px;
+    height:600px;
+    display:block;
+    margin-left: 110px;
+    margin-top: 90px;
+}
+
+#left-window {
+    width:50%;
+    float:left;
+    display: none;
+    position:relative;
+    border-right: 1px white solid;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+
+#right-window {
+    width: 50%;
+    float: right;
+    display: none;
+    position:relative;
+}
+
+#topbar {
+    height: 30px;
+    background-color: blue;
+    display:none;
+}
+
+#leftbar {
+    float: left;
+    width:50%;
+    background-color: blue;
+    text-align:right;
+    font-size: 15px;
+    color:aqua;
+    font-family:"VT323";
+    
+}
+
+#rightbar {
+    float: right;
+    width:50%;
+    background-color: red;
+    text-align:right;
+    font-size: 15px;
+    color:aqua;
+    font-family:"VT323";
+    
+    
+}
+
+
+.instructions-button{
+    display:block;
+    border: none;
+    float:right;
+    background: transparent;
+    border: none !important;
+    color: white;
+    /*not picking up on font?*/
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+
+    height:60px;
+    width: 60px;
+    z-index: 1;
+    /*    close button for instructions window   */
+    
+}
+
+.interface-button {
+    display:block;
+/*    background-color: greenyellow;*/
+    background: transparent;
+    border: none !important;
+    color: white;
+    outline:none;
+    /*not picking up on font?*/
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    border-radius: 50%;
+    height:100px;
+    width: 100px;
+    z-index: 2;
+/*
+    left:48%;
+    top:61%;
+*/
+    left:43%;
+    top:65%;
+    position:absolute;
+    /*    choosing button  */
+}
+
+
+#beginning{
+    width:100%;
+    height:100%;
+    position:absolute;
+    display:block;
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    /*    animation segment  */
+            
+}
+
+/*   SIDE BAR  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: aqua;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*   SIDE BAR  */
+
+p {
+    padding: 00px 0px 0px 32px;
+    text-decoration: none;
+    font-size: 27px;
+    color: aqua;
+    font-family: "VT323"; 'VT323', monospace;
+    display: block;
+    transition: 0.3s;
+}
+
+
