@@ -1,0 +1,755 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family:"VT323";
+    src: url(https://fonts.googleapis.com/css?family=VT323) format("truetype");
+    
+}
+
+body {
+    background: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+#p5-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#instructions-window {
+    background-image: url(instructionsscenario3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height:600px;
+    display:block;
+    position:relative;
+    z-index:5;
+    background-color: white;
+    
+}
+
+.instructions-button{
+    display:block;
+    border: none;
+    float:right;
+    background: transparent;
+    border: none !important;
+    color: white;
+    /*not picking up on font?*/
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    height:60px;
+    width: 60px;
+    z-index: 1;
+    /*    close button for instructions window   */
+    
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+}
+
+.defaultbutton{
+    position: relative;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    border-radius: 50%;
+    height:25px;
+    width: 25px;
+    z-index: 3;
+    left:43%;
+    top:65%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+.popupbutton{
+    position: relative;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    border-radius: 50%;
+    height:25px;
+    width: 25px;
+    z-index: 3;
+    float: right;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+.button01{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    z-index: 3;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    left:82.7%;
+    bottom: 55.3%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+   
+}
+
+.button02{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:36.3%;
+    bottom: 64%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+
+}
+
+.button03{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+     height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:43.7%;
+    bottom: 71.9%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+.button04{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+     height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:16.8%;
+    bottom: 41.5%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+
+.button05{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:8%;
+    bottom: 16%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+  
+}
+
+
+
+
+.button06{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:65%;
+    bottom: 80.5%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+  
+}
+
+
+.button07{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:49%;
+    bottom: 17%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+}
+
+.button08{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:cornflowerblue;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:94%;
+    bottom: 21%;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+
+}
+
+#alllines{
+    width:100%;
+    height:100%;
+    position:absolute;
+    display:block;
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 0%;
+    left: 0%;
+    outline: none;
+        }
+
+
+
+.popupbuttonopen01{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    opacity:0.2;
+    z-index: 3;
+    left:86.9%;
+    bottom:34.5%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+.popupbuttonopen02{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    z-index: 3;
+    left:61.9%;
+    bottom:32.2%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+.popupbuttonopen03{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    z-index: 3;
+    left:56.4%;
+    bottom:65%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+.popupbuttonopen04{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    z-index: 3;
+    left:60.8%;
+    bottom:75%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+.popupbuttonopen05{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    z-index: 3;
+    left:26%;
+    bottom:77.5%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+
+
+.popupbuttonopen06{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    z-index: 3;
+    left:21%;
+    bottom: 15%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+
+
+
+.popupbuttonopen07{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:90px;
+    width: 90px;
+    z-index: 3;
+    left:58.1%;
+    bottom:43.2%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+.popupbuttonopen08{
+    position: fixed;
+    display: block;
+    border: none;
+    background-color:red;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    height:70px;
+    width: 70px;
+    z-index: 3;
+    left:86%;
+    bottom:90%;
+    opacity:0.3;
+    outline: none;
+    background: transparent;
+    border: none !important;
+    font-size:0;
+    
+}
+
+
+
+    
+#popup01Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    left:10%;
+    top:11%;
+    z-index: 4;
+    float:right;
+    /*    animation segment  */
+            
+}
+
+#popup02Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 100px;
+    right: 700px;
+    z-index: 4;
+    /*    animation segment  */
+            
+}
+
+#popup03Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 100px;
+    right: 800px;
+    z-index: 4;
+    /*    animation segment  */
+            
+}
+
+
+#popup04Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 100px;
+    right: 800px;
+    z-index: 4;
+    /*    animation segment  */
+            
+}
+
+#popup05Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 100px;
+    right: 800px;
+    z-index: 4;
+    /*    animation segment  */
+            
+}
+
+
+
+#popup06Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 100px;
+    right: 800px;
+    z-index: 4;
+    /*    animation segment  */
+            
+}
+
+#popup07Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    left:10%;
+    top:11%;
+    z-index: 4;
+    float:right;
+    /*    animation segment  */
+            
+}
+
+#popup08Window{
+    width:48%;
+    height:48%;
+    position:absolute;
+    display:block
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    top: 100px;
+    right: 800px;
+    z-index: 4;
+    /*    animation segment  */
+            
+}
+
+
+
+.popupbuttonclose01{
+    position: fixed;
+    display: block;
+    background: transparent;
+   
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 3;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+.popupbuttonclose02{
+    position: fixed;
+    display: block;
+    background: transparent;
+   
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 3;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+
+.popupbuttonclose03{
+    position: fixed;
+    display: block;
+    background: transparent;
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 3;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+.popupbuttonclose04{
+    position: fixed;
+    display: block;
+    background: transparent;
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 3;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+.popupbuttonclose05{
+    position: fixed;
+    display: block;
+    background: transparent;
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 4;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+
+
+.popupbuttonclose06{
+    position: fixed;
+    display: block;
+    background: transparent;
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 4;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+
+.popupbuttonclose07{
+    position: fixed;
+    display: block;
+    background: transparent;
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 3;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+
+.popupbuttonclose08{
+    position: fixed;
+    display: block;
+    background: transparent;
+    border: none !important;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 18px;
+    z-index: 4;
+    float:bottom;
+    left:10%;
+    top:11%;
+    width:50%;
+    height:50%;
+    
+}
+  
+
+
+/*   SIDE BAR  */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 30px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family: "VT323"; 'VT323', monospace;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: yellow;
+}
+
+p {
+    color: aqua;
+    font-family: "VT323"; 'VT323', monospace;
+    font-size: 30px;
+    padding: 30px 8px 8px 32px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/*   SIDE BAR  */
+
