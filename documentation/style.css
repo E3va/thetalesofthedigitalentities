@@ -474,5 +474,21 @@ b {
     
 }
 
+c{
+    
+    padding: 50px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 17px;
+    color: blue;
+    font-family: 'Karla', sans-serif;
+    display: block;
+    transition: 0.3s;
+    line-height:35px;
+    text-align: center;
+    
+    
+    
+}
+
 
 
