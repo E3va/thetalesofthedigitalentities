@@ -65,10 +65,10 @@ min-height: 100%;
 }
 
 p {
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     color:white;
     line-height: 180%; 
-    font-family: "VT323"; 'VT323', monospace;
+    font-family: "Karla";
     padding:0% 0px 0px 3%;
     opacity:1;
     
@@ -88,7 +88,7 @@ p {
     width: 150px;
     opacity:0.6;
     float:left;
-    margin: 25% 0px 0px 2%;
+    margin: 15% 0px 0px 0px;
     
     
 }
@@ -103,7 +103,7 @@ p {
     transition: .5s ease;
     opacity: 0;
     font-family: "VT323"; 'VT323', monospace;
-    margin:11.5% 0px 0px 2%;
+    margin:7% 0px 0px 2%;
     float:left;
     display:inline-block;
     line-height: 40px;
@@ -127,7 +127,7 @@ p {
     width: 150px;
     opacity:0.6;
     float:left;
-    margin: 10% 0px 0px 2%;
+    margin: 10% 0px 0px 0px;
 
     
 }
@@ -165,7 +165,7 @@ p {
     width: 150px;
     opacity:0.6;
     float:left;
-    margin: 10% 0px 0px 2%;
+    margin: 10% 0px 0px 0px;
    
 
 }
